@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CallBlock Vibe</title>
+<meta name="description" content="Privacy Policy for CallBlock Vibe, a caller ID, spam blocker, and dialer app by Hai Phat LTD.">
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --text: #1b1f27;
+    --text-muted: #5a6373;
+    --border: #e4e7ec;
+    --accent: #2f6fed;
+    --accent-soft: #eaf1ff;
+    --table-head: #f0f3f9;
+    --code-bg: #f0f3f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11141a;
+      --surface: #171b23;
+      --text: #e7e9ee;
+      --text-muted: #9aa3b2;
+      --border: #272c37;
+      --accent: #6ea0ff;
+      --accent-soft: #1b2638;
+      --table-head: #1c212b;
+      --code-bg: #1c212b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  header.page-head {
+    margin-bottom: 32px;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px clamp(18px, 4vw, 40px);
+  }
+  h2 {
+    font-size: 19px;
+    margin: 32px 0 10px;
+    padding-top: 6px;
+    border-top: 1px solid var(--border);
+  }
+  .card > h2:first-child {
+    border-top: none;
+    margin-top: 0;
+  }
+  p { margin: 10px 0; color: var(--text); }
+  ul, ol { margin: 10px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--table-head);
+    font-weight: 600;
+  }
+  strong { font-weight: 650; }
+  .contact-box {
+    margin-top: 28px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    font-size: 14.5px;
+  }
+  .contact-box a { font-weight: 600; }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 28px;
+  }
+  @media (max-width: 480px) {
+    h1 { font-size: 24px; }
+    .card { padding: 22px 16px; }
+    table { font-size: 13.5px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <span class="badge">CallBlock Vibe</span>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: October 1, 2026 &middot; Developer: Hai Phat LTD</div>
+  </header>
+
+  <div class="card">
+    <p>Hai Phat LTD ("we," "us," "our") built CallBlock Vibe (the "App") to identify incoming callers, block spam
+    calls, and provide a simple dialer. This Privacy Policy explains what information the App accesses, how it is
+    used, what is processed only on your device, and what is shared with third-party services the App relies on.</p>
+
+    <h2>1. Information the App accesses on your device</h2>
+    <p>To provide caller identification, spam blocking, and related calling features, the App requests the
+    following Android permissions. The data these permissions expose is <strong>processed locally on your
+    device</strong> to power the corresponding feature and is <strong>not uploaded to any server operated by
+    us</strong>:</p>
+    <table>
+      <thead><tr><th>Permission</th><th>Why the App needs it</th></tr></thead>
+      <tbody>
+        <tr><td>READ_PHONE_STATE</td><td>Detect an incoming/outgoing call so the App can show caller ID and call-state information.</td></tr>
+        <tr><td>READ_CALL_LOG</td><td>Display your call history inside the App.</td></tr>
+        <tr><td>READ_CONTACTS / WRITE_CONTACTS</td><td>Match incoming numbers against your saved contacts and let you add or edit contacts from the App.</td></tr>
+        <tr><td>POST_NOTIFICATIONS</td><td>Show notifications such as spam-call alerts and missed-call alerts.</td></tr>
+        <tr><td>ANSWER_PHONE_CALLS, CALL_PHONE, MANAGE_OWN_CALLS</td><td>Let the App act as a dialer/in-call screen: answer, place, and manage calls.</td></tr>
+        <tr><td>FOREGROUND_SERVICE, FOREGROUND_SERVICE_PHONE_CALL</td><td>Keep the in-call screen and call-screening service running reliably while a call is active.</td></tr>
+        <tr><td>USE_FULL_SCREEN_INTENT</td><td>Show the full-screen incoming-call UI, similar to the stock dialer.</td></tr>
+        <tr><td>WAKE_LOCK</td><td>Keep the device processor active long enough to handle an incoming call or screening decision.</td></tr>
+      </tbody>
+    </table>
+    <p>The App also includes a <strong>Call Screening Service</strong> that evaluates incoming numbers on-device to
+    identify or block spam calls, an <strong>In-Call Service</strong> that powers the dialer and in-call screen when
+    you set the App as your default or an additional calling app, and a <strong>Notification Listener Service</strong>
+    used for the App's "Unseen" feature: it reads the preview text of notifications you already received (it does
+    <strong>not</strong> mark them as read on the original app) so the App can show you a consolidated view of
+    recent notifications. This processing happens <strong>entirely on your device</strong>; notification content
+    read for this feature is not transmitted to us or stored on any server.</p>
+    <p>None of your call log, contacts, dialed numbers, or notification preview content is uploaded to servers
+    operated by Hai Phat LTD. This data stays on your device and is used only to power the features described
+    above.</p>
+
+    <h2>2. Third-party services used by the App</h2>
+    <p>The App uses the following third-party services, which operate independently of the on-device processing
+    described above. These services may collect device identifiers (such as your Advertising ID) and usage data
+    under their own privacy policies:</p>
+    <ul>
+      <li><strong>Google AdMob</strong> and its mediation partners — <strong>Meta Audience Network, AppLovin,
+      Pangle (TikTok for Business), Unity Ads, Vungle (Liftoff Monetize), and Mintegral</strong> — are integrated
+      in the App to serve and measure advertising. These networks may receive your Advertising ID and other
+      device identifiers in accordance with Google's and each network's own policies.
+      See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+      Policy</a>.</li>
+      <li><strong>Firebase Analytics</strong> (Google) — collects app usage and interaction data (such as screens
+      viewed and features used) to help us understand how the App is used.</li>
+      <li><strong>Firebase Crashlytics</strong> (Google) — collects crash reports and diagnostic logs to help us
+      find and fix bugs.</li>
+      <li><strong>Firebase Remote Config / Firebase Realtime Database</strong> (Google) — used to remotely
+      configure app behavior and sync non-personal configuration data.</li>
+      <li><strong>Adjust</strong> — an attribution service that helps us understand which channel brought you to
+      the App. Adjust may receive your Advertising ID and device/network information for this purpose.
+      See <a href="https://www.adjust.com/terms/privacy-policy/" target="_blank" rel="noopener">Adjust's Privacy
+      Policy</a>.</li>
+    </ul>
+    <p>These services initialize automatically when the App starts, independent of whether you have interacted
+    with any advertising inside the App.</p>
+
+    <h2>3. Your choices</h2>
+    <ul>
+      <li>You can reset or opt out of the Advertising ID used for ad personalization at any time in your device's
+      <strong>Settings &gt; Privacy &gt; Ads</strong> (wording varies by Android version).</li>
+      <li>You can revoke any Android permission listed above at any time in <strong>Settings &gt; Apps &gt;
+      CallBlock Vibe &gt; Permissions</strong>. Revoking a permission disables the corresponding feature (for
+      example, revoking Phone permissions disables caller ID and call screening) but does not affect other parts
+      of the App.</li>
+      <li>You can turn off notification access for the App (disabling the "Unseen" feature) in
+      <strong>Settings &gt; Apps &gt; Special app access &gt; Notification access</strong>.</li>
+      <li>You can uninstall the App at any time, which removes all app-local data from your device.</li>
+    </ul>
+
+    <h2>4. Data retention</h2>
+    <p>Call log, contact matches, and notification previews processed for the features above are kept only on
+    your device for as long as the App or Android itself retains them, and are deleted when you clear the App's
+    data or uninstall the App. We do not operate a server that stores this content.</p>
+
+    <h2>5. Children's privacy</h2>
+    <p>The App is a general-audience utility app (caller ID, spam blocking, dialer) and is not directed at
+    children. We do not knowingly collect personal information from children. If you believe a child has provided
+    us with personal information, contact us at the address below and we will take appropriate action.</p>
+
+    <h2>6. Security</h2>
+    <p>We rely on Android's built-in app sandboxing and the security practices of the third-party services listed
+    above. No method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute
+    security.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with a new
+    effective date. Continued use of the App after a change becomes effective constitutes acceptance of the
+    updated policy.</p>
+
+    <h2>8. Contact us</h2>
+    <p>If you have questions about this Privacy Policy or how the App handles data, contact us at:</p>
+    <div class="contact-box">
+      Email: <a href="mailto:minhtrieo742@gmail.com">minhtrieo742@gmail.com</a>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 Hai Phat LTD &middot; CallBlock Vibe</footer>
+</div>
+</body>
+</html>
